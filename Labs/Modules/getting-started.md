@@ -26,13 +26,13 @@ Your virtual machine is your workhorse throughout the workshop. The lab guide is
 
 To get a better understanding of your lab resources and credentials, navigate to the **Environment** tab.
 
- ![](../Images/gs-leave-2.png)
+ ![](../Images/new02.png)
 
 ## Utilizing the Split Window Feature
 
 For convenience, you can open the lab guide in a separate window by selecting the **Split Window** button from the Top right corner.
 
- ![](../Images/gs-leave-3.png)
+ ![](../Images/new3.png)
 
 ## Managing Your Virtual Machine
 
@@ -44,7 +44,7 @@ Feel free to **Start, Stop, or Restart (2)** your virtual machine as needed from
 
 To adjust the zoom level for the environment page, click the **A↕ : 100%** icon located next to the timer in the lab environment.
 
-![Zoom In/Zoom Out](../Images/g-11-3.png)  
+![Zoom In/Zoom Out](../Images/new1.png)  
 
 ## Let's Get Started with Microsoft Defender
 
