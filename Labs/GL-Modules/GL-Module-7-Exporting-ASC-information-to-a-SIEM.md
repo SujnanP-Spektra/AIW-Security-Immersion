@@ -1,0 +1,160 @@
+# Exercise 7: Exporting Microsoft Defender for Cloud information to a SIEM
+
+## Overview
+
+In this module, you will configure the continuous export for the Log Analytics workspace, exporting security alerts, recommendations, secure scores, and security findings. Moreover, you will learn how to enable the integration between Microsoft Defender for Cloud and Microsoft Sentinel.
+
+## Objectives
+
+- Task 1: Using continuous export
+- Task 2: Integration with Microsoft Sentinel
+
+### Task 1: Using continuous export
+
+Microsoft Defender for Cloud generates detailed security alerts and recommendations. You can view them in the portal or through programmatic tools. You might also need to export some or all of this information for tracking with other monitoring tools in your environment.
+
+Continuous export lets you fully customize what will be exported and where it will go. Even though the feature is called continuous, there's also an option to export weekly snapshots of secure score or regulatory compliance data.
+
+In this task, you will be creating log analytics workspace in Microsoft defender for cloud.
+
+1. Type **Microsoft Defender for Cloud (1)** in the search box located at the top of the **Azure Portal** page and click on **Microsoft Defender for Cloud (2)**.
+
+    ![](../Images/hyb-ex1-g1.png)
+
+1. From **Microsoft Defender for Cloud** blade, Under **Management (1)** Select **Environment settings (2)**. Here, you'll be able to see the **subscription (3)**.
+
+    ![Template deployment completed](../Images/hyb-ex1-g2.png)
+
+1. Under **Settings** section, click on **Continuous export**.
+
+    ![](../Images/Sh36.png)
+
+1. Here, you can configure the streaming export setting of Security Center data to multiple export targets either Event Hub or Log Analytics workspace.
+
+1. Select the **Log Analytics workspace (1)** option and follow the below steps:
+
+    - Exported data types:
+
+     - Check the box next to  **Security recommendations (2)**
+
+     - Check the box next to **Secure score (3)**
+
+     - Check the box next to **Security alerts (4)**
+
+         ![continuous-export](../Images/hyb-ex6-g2.png)
+     
+     - Export Frequency:
+
+     - Check the box next to **Streaming updates (5)** and **Snapshots(6)**
+
+     - Export configuration:
+
+      - Resource group: Select **asclab (7)** from the drop-down list
+
+     - Export target:
+
+      - Subscription: Select your **Subscription (8)**
+
+      - Select target workspace: Select **asclab-la-<inject key="Deployment ID" enableCopy="false" /> (9)**
+
+     -  Click on **Save (10)**
+
+        ![](../Images/hyb-ex6-g3.png)
+
+        > **Note:** Exporting Defender for Cloud's data  also enables you to use experiences such as integration with 3rd-party SIEM and Azure Data Explorer.
+
+1. Search for **Log Analytics workspaces (1)** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
+
+    ![](../Images/hyb-ex6-g4.png) 
+
+1. Click on the **asclab-la-<inject key="Deployment ID" enableCopy="false" /> (1)** workspace and select **Logs (2)**.
+
+    ![](../Images/hyb-ex6-g5.png) 
+
+1. On the welcome page, close the **Queries** window.
+
+    ![](../Images/hyb-ex6-g6.png) 
+
+    ![](../Images/hyb-ex6-g7.png) 
+
+1. From the left pane, select the **Tables (1)** tab and click on **three dot icon (2)** the **Show tables with no data** option to see the following tables: `SecurityEvent`, `SecurityBaseline`, `SecurityBaselineSummary` and  `UpdateSummary` in **`Security and Audit` (4)**.
+
+    ![](../Images/hyb-ex6-g8.png) 
+
+1. Query the tables to validate data streaming -  Expand **Security and Audit (1)** double-click on **Security Event (2)** to open the query window. Now click on **Run (3)** and see the results below.
+
+    ![](../Images/hyb-ex6-g9.png) 
+
+   > **Note:** Since the continuous export was just enabled, you may need to wait for some time for new events to show up. It could require up to few hours to provide the information. If you don't see any result, please return later to check again.
+
+### Task 2: Integration with Microsoft Sentinel
+
+Integration with Microsoft Sentinel will enable centralized monitoring of alerts and discovery data. Integrating with Microsoft Sentinel allows you to better protect your cloud applications while maintaining your usual security workflow, automating security procedures, and correlating between cloud-based and on-premises events.
+
+In this task, you will be integrating the workspace which is previously created integrating it with Microsoft sentinel.
+
+1. Search for **Microsoft Sentinel** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade).
+
+    ![](../Images/hyb-ex6-g10.png)
+
+1. On the **Microsoft Sentinel** blade, click on the **Create** button – for this task, we’ll use the same Log Analytics workspace used by the Security Center.
+ 
+    ![connect-workspace1](../Images/hyb-ex6-g11.png)
+
+1. On the **Add Microsoft Sentinel to a workspace**, select **asclab-la-<inject key="Deployment ID" enableCopy="false" />** workspace. **(1)** Click on **Add (2)**.
+
+    ![Add sentinel](../Images/hyb-ex6-g12.png)
+
+1. Adding Microsoft Sentinel to workspace asclab-la-<inject key="Deployment ID" enableCopy="false" /> is now in progress. This process will take a few minutes to complete. 
+
+1. Once the deployment of the workspace is completed you will get a notification **Successfully added Microsoft Sentinel**. Refresh the web browser page to see the workspace listed on the Microsoft Sentinel page.
+
+1. Select the workspace **asclab-la-<inject key="Deployment ID" enableCopy="false" />** on the **Microsoft Sentinel** page. 
+
+1. From the Microsoft Sentinel side pane, click on the **Data connectors** under the **Configuration** section.
+
+    ![](../Images/microsoft-senitinel-latest.png)
+    
+
+1. On the **Data connectors** page, use the search field and type: *Microsoft Defender*. Select the **Subscription-based Microsoft Defender for Cloud (Legacy) (1)** connector and then click on **Open connector page (2)**.
+
+    ![ASC pricing & settings page](../Images/hyb-ex6-g19.png)
+
+    ![ASC pricing & settings page](../Images/hyb-ex6-g20.png)
+   
+   >**Note**: If you didn't find Microsoft Defender for the cloud, follow the below steps; otherwise, continue from step 12.
+
+1. Open a new browser tab and navigate to the **Microsoft Defender portal** at https://security.microsoft.com/.
+
+1. On the **Microsoft Sentinel (1)** blade, Under **Content management (2)** Click the **Content hub (3)**search for **Microsoft Defender (4)**, select **Microsoft Defender for Cloud (5)**, and click **Install**.
+
+    ![](../Images/hyb-ex6-g14.png)
+
+    ![](../Images/hyb-ex6-g15.png)
+
+1. On the **Data connectors** page, use the search field and type: *Microsoft Defender*. Select the **Subscription-based Microsoft Defender for Cloud (Legacy) (1)** connector and then click on **Open connector page (2)**.
+
+    ![ASC pricing & settings page](../Images/Sh38.png)
+
+1. On the Configuration section, locate **Your subscription** and change the toggle button to **Connected**.
+
+    ![Connect Microsoft Defender for Cloud to Microsoft Sentinel](../Images/hyb-ex6-g21.png)
+
+<validation step="9b3b38db-6d01-4df2-a6f9-ef467daa294b" />
+
+> **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
+ 
+- Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
+- Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
+- If not, carefully read the error message and retry the step, following the instructions in the lab guide.
+- If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
+    
+### Summary
+
+In this lab you have completed configuring continuous export for the Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings, and enabling the integration between Microsoft Defender for Cloud and Microsoft Sentinel.
+
+Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
+
+Now, click on **Next** from the lower right corner to move on to the next page.
+
+   ![](../Images/next-xdr.png)
