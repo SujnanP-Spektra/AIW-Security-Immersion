@@ -170,7 +170,7 @@ In this task, you will be creating your own bechmark and will be assigning it.
    
 1. Your custom initiative is now assigned.
 
-<validation step="43e608d1-6cbd-48c7-b0f4-c513e7959b3c" />
+<validation step="f079d289-ebba-4b3f-9bf4-aff12caa904b" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
