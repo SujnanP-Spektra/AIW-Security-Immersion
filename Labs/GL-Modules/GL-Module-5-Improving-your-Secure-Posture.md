@@ -265,7 +265,7 @@ In this Task, you will create a new Logic App and then trigger it automatically 
      
     - You should receive an email, verifying in your inbox. On the labvm-xxxxxx open a new tab in the web browser and navigate to https://outlook.office365.com.
 
-<validation step="845d2579-8c67-4525-a137-b105568741c7" />
+<validation step="acd6caed-dddc-4065-88d4-4e31ebba923a" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  

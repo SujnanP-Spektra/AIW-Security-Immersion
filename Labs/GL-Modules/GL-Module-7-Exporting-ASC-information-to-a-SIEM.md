@@ -140,7 +140,7 @@ In this task, you will be integrating the workspace which is previously created 
 
     ![Connect Microsoft Defender for Cloud to Microsoft Sentinel](../Images/hyb-ex6-g21.png)
 
-<validation step="9b3b38db-6d01-4df2-a6f9-ef467daa294b" />
+<validation step="57d9fcdd-9219-42a9-bc56-eeb6bd665fa8" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
