@@ -169,3 +169,5 @@ It maps the current state of these items with the state during the previous scan
 ## Summary
 
 In this module, you have completed exploring different **Microsoft Defender for Cloud** features - **Used JIT to reduce the attack surface**, **Adaptive Application Control** and **File Integrity Monitoring**. You have reached the end of the lab.
+
+### Lab Successfully Completed

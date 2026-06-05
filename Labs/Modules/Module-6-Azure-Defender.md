@@ -193,3 +193,7 @@ In this task, we will use one of the endpoints that allows retrieving a list of 
 In this module, you have completed exploring more **Security Center** features - **Alert validation**, **Alert suppression** and **Accessed Security Alerts using Graph Security API**.
 
 Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
+
+Now, click on **Next** from the lower right corner to move on to the next page.
+
+   ![](../Images/next-xdr.png)

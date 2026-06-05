@@ -146,4 +146,6 @@ In this exercise, You will create the Microsoft Defender for Cloud default polic
 
   In this module, you have learned how to enable Microsoft Defender for Cloud. Now you can move on to the next module by clicking on the Next button at the bottom right of this page.
 
- 
+Now, click on **Next** from the lower right corner to move on to the next page.
+
+   ![](../Images/next-xdr.png)

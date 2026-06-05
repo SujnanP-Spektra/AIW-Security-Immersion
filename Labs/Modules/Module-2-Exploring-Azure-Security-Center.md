@@ -218,3 +218,7 @@ In this task, you will be exploring the Inventory capabality in the Microsoft de
 In this module, you have explored **Microsoft Defender for Cloud dashboard**, **Secure Score and Recommendations** and **Inventory capability**. 
   
 Now you can move on to the next module by clicking on the Next button at the bottom right of this screen.
+
+Now, click on **Next** from the lower right corner to move on to the next page.
+
+   ![](../Images/next-xdr.png)

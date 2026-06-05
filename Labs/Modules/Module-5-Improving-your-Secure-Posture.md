@@ -318,3 +318,7 @@ More details on the [official article](https://docs.microsoft.com/en-us/azure/se
 In this module, you have completed exploring more **Microsoft Defender for Cloud** features - **Vulnerability assessment for Containers**, **Automated recommendations with workflow automation** and **Accessed your secure score via ARG**.
 
 Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
+
+Now, click on **Next** from the lower right corner to move on to the next page.
+
+   ![](../Images/next-xdr.png)

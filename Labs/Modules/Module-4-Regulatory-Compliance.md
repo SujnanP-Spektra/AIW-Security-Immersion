@@ -185,3 +185,7 @@ In this task, you will be creating your own bechmark and will be assigning it.
 In this module, you have completed Exploring **Microsoft Defender for cloud** features - **Regulatory Compliance dashboard**, **Added new standards** and **Created your own benchmark**.
 
 Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
+
+Now, click on **Next** from the lower right corner to move on to the next page.
+
+   ![](../Images/next-xdr.png)

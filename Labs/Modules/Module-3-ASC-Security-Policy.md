@@ -321,3 +321,7 @@ Add each policy one by one:
 In this module, you have completed Exploring **Microsoft Defender for Cloud** features, **ASC default policy, Azure Policy, Created resource exemption, Created policy enforcement and deny,** and **Created custom policy**.
 
 Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
+
+Now, click on **Next** from the lower right corner to move on to the next page.
+
+   ![](../Images/next-xdr.png)
