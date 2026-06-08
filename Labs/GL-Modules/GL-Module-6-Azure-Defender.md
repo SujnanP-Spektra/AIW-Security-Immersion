@@ -179,7 +179,7 @@ In this task, we will use one of the endpoints that allows retrieving a list of 
 
     ![Create sample virtual machine security alerts](../Images/hyb-ex5-g22.png)
 
-<validation step="4ccb5b1a-010b-495d-973f-7aa580415d93" />
+<validation step="313a2e0a-3867-456b-94e6-caf3857d47cd" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  

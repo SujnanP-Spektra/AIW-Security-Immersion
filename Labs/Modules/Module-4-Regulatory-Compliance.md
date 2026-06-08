@@ -170,7 +170,7 @@ In this task, you will be creating your own bechmark and will be assigning it.
    
 1. Your custom initiative is now assigned.
 
-<validation step="43e608d1-6cbd-48c7-b0f4-c513e7959b3c" />
+<validation step="b6fc784c-2312-4029-a639-408f81c9421d" />
 
 > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
  
@@ -178,7 +178,6 @@ In this task, you will be creating your own bechmark and will be assigning it.
 - Hit the Validate button for the corresponding task. If you receive a success message, you can proceed to the next task. 
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
-    <validation step ="01bad42a-6d4b-485f-82db-daba1ae8150b" />
 
 ## Summary
 
