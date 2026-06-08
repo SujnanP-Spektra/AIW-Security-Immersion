@@ -308,7 +308,7 @@ Add each policy one by one:
    
 1. Your custom initiative is now assigned.
 
-<validation step="7fcc698f-2bd1-4366-ad89-5a607ceecf42" />
+<validation step="f65fa265-0531-4220-8bcd-f276f4511f12" />
 
    > **Congratulations** on completing the task! Now, it's time to validate it. Here are the steps:
    - Navigate to the Lab Validation Page, from the upper right corner in the lab guide section.
