@@ -20,11 +20,13 @@ Microsoft Defender for Cloud continuously assesses your hybrid cloud environment
 
 In this task, you will get a walkthrough on regulatory compliance dashboard in Microsoft defender for cloud.
 
-1. Navigate to **Microsoft Defender for Cloud (1)** in the Azure portal (perform if not already on the Microsoft Defender for Cloud).
+1. In the Azure portal search bar, type **Microsoft Defender for Cloud (1)** and select **Microsoft Defender for Cloud (2)** from the search results.
 
     ![](../Images/hyb-ex1-g1.png)
 
-1. On the overview page, select the **Regulatory Compliance (1)** tile (this pillar is also available on the left side under the Cloud Security section). Once the **Regulatory Compliance (2)** dashboard  opens, you can see the compliance standards currently assigned to your subscription.
+1. On the overview page, expand **Cloud Security (1)** from the left navigation pane and select **Regulatory compliance (2)**. Review the **Microsoft cloud security benchmark** dashboard to view your current compliance posture and the number of controls that have passed.
+
+    Once the **Regulatory Compliance** dashboard  opens, you can see the compliance standards currently assigned to your subscription.
 
     ![](../Images/hyb-ex3-g1.png)
 
@@ -34,7 +36,7 @@ In this task, you will get a walkthrough on regulatory compliance dashboard in M
 
     ![Contoso Security Benchmark](../Images/lab4-6.png)
 
-1. Expand the **Contoso Security Benchmark** compliance control. Click on the **Managed identity should be used in function apps**
+1. Expand the **Contoso Security Benchmark (1)** compliance control. Click on the **Managed identity should be used in function apps (2)**
 
     ![Remmediate function app](../Images/lab4-5.png)
    
@@ -78,11 +80,11 @@ Once you create your custom initiative, Microsoft Defender for Cloud allows you 
 
 In this task, you will be creating your own bechmark and will be assigning it.
 
-1. In the search box located at the top of the Azure Portal page, search for **Policy (1)** and click on it.
+1. In the Azure portal search bar, type **Policy (1)** and select **Policy (2)** from the search results.
 
     ![Add CIS 1.1.0 (New) Standard](../Images/hyb-ex2-g9.png)
 
-1. From the left pane of the **Policy** page, select **Definitions (2)** and from the **Authoring (1)**, select **+ Initiative definition (3)** to create a new policy set definition.
+1. From the left pane of the **Policy** page, expand **Authoring (1)** from the left navigation pane and select **Definitions (2)**. On the **Definitions** page, click **+ Initiative definition (3)** to create a new initiative.
 
     ![Benchmark Policy](../Images/hyb-ex3-g6.png)
 
@@ -146,11 +148,11 @@ In this task, you will be creating your own bechmark and will be assigning it.
 
     ![](../Images/Sh34.png)
 
-1. To assign your new security policy, type **Microsoft Defender for Cloud** in the search box located at the top of the **Azure Portal** page and click on it.
+1. In the Azure portal search bar, type **Microsoft Defender for Cloud (1)** and select **Microsoft Defender for Cloud (2)** from the search results.
 
     ![](../Images/hyb-ex1-g1.png)
      
-1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here you'll be able to see the subscription.
+1. In the **Microsoft Defender for Cloud** page, expand **Management (1)** from the left navigation pane and select **Environment settings (2)**. On the Environment settings page, Select **subscription (3)**.
 
     ![Template deployment completed](../Images/hyb-ex1-g2.png)
    
@@ -158,7 +160,7 @@ In this task, you will be creating your own bechmark and will be assigning it.
 
     ![Template deployment completed](../Images/Sh35.png)
 
-1. Click on **...** for and select **View in Azure Policy** and select **Assign initative**.
+1. Click on **... (1)** for and select **View in Azure Policy (2)** and select **Assign initative**.
 
     ![](../Images/lab4-2.png)
 
@@ -181,10 +183,14 @@ In this task, you will be creating your own bechmark and will be assigning it.
 
 ## Summary
 
-In this module, you have completed Exploring **Microsoft Defender for cloud** features - **Regulatory Compliance dashboard**, **Added new standards** and **Created your own benchmark**.
+In this lab, you:
 
-Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
+- Explored the **Regulatory Compliance** dashboard and reviewed compliance assessments, controls, and standards within Microsoft Defender for Cloud.
+- Analyzed compliance details for security controls and generated compliance reports to evaluate your organization's regulatory posture.
+- Added and enabled a new compliance standard, **CIS Microsoft Azure Foundations Benchmark**, for your subscription.
+- Created a custom benchmark initiative by defining groups and associating policy definitions to meet organization-specific compliance requirements.
+- Assigned the custom benchmark as a security policy and integrated it with Microsoft Defender for Cloud for compliance tracking and governance.
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+## Click Next to continue to the next lab.
 
-   ![](../Images/next-xdr.png)
+   ![](../Images/SHC0.png)

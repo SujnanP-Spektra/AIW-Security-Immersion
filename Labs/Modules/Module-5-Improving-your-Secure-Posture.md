@@ -18,7 +18,7 @@ In this task, you will work on vulnerablity assessment for containers by uploadi
 
 To simulate a container registry image with vulnerabilities, we will use ACR task commands and a sample image:
 
-1. Search for **Container registries** in the search box located on the top of the **Azure Portal** page and select it.
+1. In the Azure portal search bar, type **Container registries (1)** and select **Container registries (2)** from the search results.
 
     ![](../Images/hyb-ex4-g1.png)
 
@@ -106,7 +106,7 @@ In this Task, you will create a new Logic App and then trigger it automatically 
 
 **Create a new Logic App:**
 
-1. Search for **Logic Apps** in the search box located on the top of the **Azure Portal** page and click on it, or [click here](https://ms.portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.Logic%2Fworkflows).
+1. In the Azure portal search bar, type **Logic Apps (1)** and select **Logic apps (2)** from the search results.
 
     ![](../Images/hyb-ex4-g10.png)
     
@@ -136,7 +136,7 @@ In this Task, you will create a new Logic App and then trigger it automatically 
 
         ![](../Images/hyb-ex4-g14.png)
 
-1. When the **Deployment** is completed click on **Go to resource**
+1. After the deployment completes, verify that the Logic App has been successfully deployed and is listed on the **Logic apps** page.
 
    ![](../Images/hyb-ex4-g16.png)
 
@@ -148,7 +148,7 @@ In this Task, you will create a new Logic App and then trigger it automatically 
 
    ![](../Images/hyb-ex4-g18.png)
 
-1. Search for **Security Center** in the search box and select **When a Microsoft Defender for Cloud Recommendation is created or triggered** from the list of **Triggers**
+1. In the **Add a trigger** page, search for **When a Microsoft Defender for Cloud Recommendation is created or triggered (1)** and select **When a Microsoft Defender for Cloud Recommendation is created or triggered (2)** from the search results.
 
     ![](../Images/hyb-ex4-g19.png)
 
@@ -176,7 +176,7 @@ In this Task, you will create a new Logic App and then trigger it automatically 
 
 1. Click just after Recommendation changed: to get your cursor in the right place. In the dynamic content box, click on the **Dynamic content** tab and then search and select `Properties Display Name` in the list (click Add dynamic content if it doesn’t pop out automatically).
 
-1. Click into the Body text box and type the following:
+1. Click into the **Body text box (1)** and use **Dynamic content (2)** to add the appropriate recommendation properties. Repeat this process for **Recommendation**, **Description**, **Status**, and **Link to recommendation**.
 
     - **Recommendation:**</br>
     - **Description:**</br>
@@ -279,11 +279,11 @@ Azure Resource Graph (ARG) provides an efficient and performant resource explora
 
 In this task, you will query and calculate your score for the security controls and accurately calculate the aggregated score across multiple subscriptions.
 
-1. Search for **Resource Graph Explorer** in the search box located on the top of the **Azure Portal** page and click on **Resource Graph Explorer**.
+1. Search for **Resource Graph Explorer (1)** in the search box located on the top of the **Azure Portal** page and click on **Resource Graph Explorer (2)**.
 
     ![Resource Graph Explorer](../Images/hyb-ex4-g35.png)
 
-1. Paste the following KQL query and then select **Run query**.
+1. Paste the following **KQL query (1)** and then select **Run query (2)**.
 
      ```
      SecurityResources
@@ -298,7 +298,7 @@ In this task, you will query and calculate your score for the security controls 
 
 1. You should now see your subscription ID listed here, along with the current score (in points), the max score and the score in percentage.
 
-1. To return the status of all the security controls, select **New query**. Next, paste the following KQL query and click on **Run query**:
+1. To return the status of all the security controls, select **New query**. Next, paste the following **KQL query (1)** and click on **Run query (2)**:
 
      ```
      SecurityResources
@@ -311,14 +311,19 @@ In this task, you will query and calculate your score for the security controls 
 
    > **Note:** It could require up to few hours for ARG to provide the information. If you don't see any result, please return later to check again.
 
-More details on the [official article](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls) or on the [blog post](https://techcommunity.microsoft.com/t5/azure-security-center/querying-your-secure-score-across-multiple-subscriptions-in/ba-p/1749193)
+    
+    More details on the [official article](https://docs.microsoft.com/en-us/azure/security-center/secure-score-security-controls) or on the [blog post](https://techcommunity.microsoft.com/t5/azure-security-center/querying-your-secure-score-across-multiple-subscriptions-in/ba-p/1749193)
 
 ## Summary
 
-In this module, you have completed exploring more **Microsoft Defender for Cloud** features - **Vulnerability assessment for Containers**, **Automated recommendations with workflow automation** and **Accessed your secure score via ARG**.
+In this lab, you:
 
-Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
+- Performed a **vulnerability assessment for containers** by uploading a container image to Azure Container Registry and reviewing identified vulnerabilities and security findings.
+- Created a **Logic App** and configured **Workflow Automation** to automatically respond to Microsoft Defender for Cloud recommendations.
+- Configured automated email notifications to streamline security monitoring and recommendation management.
+- Triggered and validated workflow automation to verify automated response actions and notifications.
+- Used **Azure Resource Graph (ARG)** queries to retrieve and analyze Secure Score data and security control information across Azure resources.
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+## Click Next to continue to the next lab.
 
-   ![](../Images/next-xdr.png)
+   ![](../Images/SHC0.png)

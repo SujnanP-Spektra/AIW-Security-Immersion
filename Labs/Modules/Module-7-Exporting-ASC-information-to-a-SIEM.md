@@ -63,7 +63,7 @@ In this task, you will be creating log analytics workspace in Microsoft defender
 
         > **Note:** Exporting Defender for Cloud's data  also enables you to use experiences such as integration with 3rd-party SIEM and Azure Data Explorer.
 
-1. Search for **Log Analytics workspaces (1)** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/HubsExtension/BrowseResource/resourceType/Microsoft.OperationalInsights%2Fworkspaces).
+1. In the Azure portal search bar, enter **Log Analytics workspaces (1)** and select **Log Analytics workspaces (2)** from the search results.
 
     ![](../Images/hyb-ex6-g4.png) 
 
@@ -93,7 +93,7 @@ Integration with Microsoft Sentinel will enable centralized monitoring of alerts
 
 In this task, you will be integrating the workspace which is previously created integrating it with Microsoft sentinel.
 
-1. Search for **Microsoft Sentinel** in the search box located on the top of the **Azure Portal** page and click on it or [click here](https://portal.azure.com/#blade/Microsoft_Azure_Security_Insights/WorkspaceSelectorBlade).
+1. In the Azure portal search bar, enter **Microsoft Sentinel (1)** and select **Microsoft Sentinel (2)** from the search results.
 
     ![](../Images/hyb-ex6-g10.png)
 
@@ -110,15 +110,13 @@ In this task, you will be integrating the workspace which is previously created 
 1. Once the deployment of the workspace is completed you will get a notification **Successfully added Microsoft Sentinel**. Refresh the web browser page to see the workspace listed on the Microsoft Sentinel page.
 
 1. Select the workspace **asclab-la-<inject key="Deployment ID" enableCopy="false" />** on the **Microsoft Sentinel** page. 
-
-1. From the Microsoft Sentinel side pane, click on the **Data connectors** under the **Configuration** section.
-
-    ![](../Images/microsoft-senitinel-latest.png)
     
 
-1. On the **Data connectors** page, use the search field and type: *Microsoft Defender*. Select the **Subscription-based Microsoft Defender for Cloud (Legacy) (1)** connector and then click on **Open connector page (2)**.
+1. Expand **Configuration (1)** and select **Data connectors (2)**. From the list of available connectors, select **Subscription-based Microsoft Defender for Cloud (Legacy) (3)**.
 
     ![ASC pricing & settings page](../Images/hyb-ex6-g19.png)
+
+1. In the connector details pane, review the information for **Subscription-based Microsoft Defender for Cloud (Legacy)** and click **Open connector page** to configure the connector.
 
     ![ASC pricing & settings page](../Images/hyb-ex6-g20.png)
    
@@ -126,7 +124,7 @@ In this task, you will be integrating the workspace which is previously created 
 
 1. Open a new browser tab and navigate to the **Microsoft Defender portal** at https://security.microsoft.com/.
 
-1. On the **Microsoft Sentinel (1)** blade, Under **Content management (2)** Click the **Content hub (3)**search for **Microsoft Defender (4)**, select **Microsoft Defender for Cloud (5)**, and click **Install**.
+1. On the **Microsoft Sentinel (1)** blade, Under **Content management (2)** Click the **Content hub (3)** search for **Microsoft Defender (4)**, select **Microsoft Defender for Cloud (5)**, and click **Install**.
 
     ![](../Images/hyb-ex6-g14.png)
 
@@ -149,12 +147,16 @@ In this task, you will be integrating the workspace which is previously created 
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
     
-### Summary
+## Summary
 
-In this lab you have completed configuring continuous export for the Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings, and enabling the integration between Microsoft Defender for Cloud and Microsoft Sentinel.
+In this lab, you:
 
-Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
+- Configured **Continuous Export** to stream Microsoft Defender for Cloud security data, including recommendations, alerts, and Secure Score information.
+- Validated exported security data in a **Log Analytics workspace** using built-in tables and queries.
+- Integrated **Microsoft Defender for Cloud** with **Microsoft Sentinel** to enable centralized security monitoring and investigation.
+- Configured the **Subscription-based Microsoft Defender for Cloud (Legacy)** data connector in Microsoft Sentinel.
+- Learned how to use Microsoft Sentinel and Log Analytics to collect, analyze, and monitor Defender for Cloud security insights.
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+## Click Next to continue to the next lab.
 
-   ![](../Images/next-xdr.png)
+   ![](../Images/SHC0.png)

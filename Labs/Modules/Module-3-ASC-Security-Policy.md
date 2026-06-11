@@ -17,11 +17,11 @@ In this module, you will perform:
 
 In this task, you will get an overview of an index of Azure Policy built-in policy definitions related to Microsoft Defender for Cloud and about initiatives, policies, and how they relate to Microsoft Defender for Cloud's recommendation.
 
-1. From the Azure Portal, search for **Microsoft Defender for Cloud** and select it.
+1. In the Azure portal search bar, type **Microsoft Defender for Cloud (1)** and select **Microsoft Defender for Cloud (2)** from the search results.
 
     ![](../Images/hyb-ex1-g1.png)
 
-1. From **Microsoft Defender for Cloud** blade, Select **Environment settings**. Here, you'll be able to see the subscription.
+1. In the **Microsoft Defender for Cloud** page, expand **Management (1)** from the left navigation pane and select **Environment settings (2)**. On the Environment settings page, Select **subscription (3)**. 
 
     ![Template deployment completed](../Images/hyb-ex1-g2.png)
    
@@ -43,7 +43,7 @@ In this task, you will get an overview of an index of Azure Policy built-in poli
 
     ![Template deployment completed](../Images/hyb-ex2-g2.png)
 
-1. On the **Basics** tab, Click on **...** under Scope.
+1. On the **Basics (1)** tab, Click on **... (2)** under Scope.
 
     ![Template deployment completed](../Images/hyb-ex2-g3.png)
 
@@ -75,11 +75,11 @@ Azure Policy keeps track of compliance for your Azure resources based on policy 
 
 In this task, you will be exploring azure policy and verify the built-in initiatives by microsoft defender for cloud.
 
-1. Type **Policy** in the search box located at the top of the **Azure Portal** page and click on it.
+1. In the Azure portal search bar, type **Policy (1)** and select **Policy (2)** from the search results.
 
     ![](../Images/hyb-ex2-g9.png)
 
-1. In the **Policy** blade, do the following:
+1. In the **Policy** blade, perform the following actions:
 
     - Expand **Authoring (1)**.
     - Select **Definitions (2)**.
@@ -117,9 +117,11 @@ In this task, you will create an exemption by clicking the ellipsis menu on the 
 
    > **Note:** Exemptions is a premium Azure policy capability that's offered for Azure Defender customers with no additional cost. For other users, charges may apply in the future.
 
-1. Type **Microsoft Defender for Cloud** in the search box located at the top of the **Azure Portal** page and click on it.
+1. In the Azure portal search bar, type **Microsoft Defender for Cloud (1)** and select **Microsoft Defender for Cloud (2)** from the search results.
 
-1. Select **Recommendations (1)** from the left navigation pane. Search and select the **Management ports should be closed on your virtual machines (2)** recommendation from the **All recommendations** tab, select the **asclab-win** resource. You can search it using the search box.
+    ![](../Images/hyb-ex1-g1.png)
+
+1. Select **Recommendations (1)** from the left navigation pane. Search and select the **Management ports should be closed on your virtual machines (2)** recommendation from the **All recommendations** tab, select the **asclab-win (3)** resource. You can search it using the search box.
 
     > **Note**: If you don't see the above recommendation that means it is not loaded yet to the control list and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next task and verify this later.
 
@@ -130,10 +132,10 @@ In this task, you will create an exemption by clicking the ellipsis menu on the 
     ![](../Images/exempt.png)
 
 1. The **Exempt pane** opens:
-    - Name: **ASC-Management ports should be closed on your virtual machines**.
-    - Check the **Set an expiration date** option and set the datetime for two days ahead at 12:00 AM.
-    - Select **Waiver (risk accepted)** as exemption category.
-    - Enter **ASC-Management ports should be closed on your virtual machines** for the Exemption description and click on **Create**.
+    - Name: **ASC-Management ports should be closed on your virtual machines (1)**.
+    - Check the **Set an expiration date (2)** option and set the **datetime (3)** for two days ahead at **12:00 AM (4)**.
+    - Select **Waiver (risk accepted) (5)** as exemption category.
+    - Enter **ASC-Management ports should be closed on your virtual machines (6)** for the Exemption description and click on **Create (7)**.
 
         ![](../Images/hyb-ex2-g13.png)
 
@@ -157,9 +159,9 @@ In this task, you will create an exemption by clicking the ellipsis menu on the 
 
 1.	Exemption rules are based on Azure Policy capability. Therefore, you can track all your exemptions from Azure Policy Blade as well.
 
-1. In the search box located at the top of the Azure Portal page, search for **Policy** and click on it. 
+1. In the Azure portal search bar, type **Policy (1)** and select **Policy (2)** from the search results.
 
-    ![](../Images/m3ex2.step1.png)
+    ![](../Images/hyb-ex2-g9.png)
 
 1. Next, select Exemptions from the left navigation pane. Notice your newly created exemption listed there.
 
@@ -169,9 +171,11 @@ In this task, you will create an exemption by clicking the ellipsis menu on the 
 
 In this task, you will learn how to use Azure Policy to do some of the more common tasks related to assigning, denying, and managing policies across your organization.
 
-1. In the search box located at the top of the Azure Portal page, search for **Microsoft Defender for Cloud** and click on it.
+1. In the Azure portal search bar, type **Microsoft Defender for Cloud (1)** and select **Microsoft Defender for Cloud (2)** from the search results.
 
-1. Select **Recommendations (2)** under **General (1)**, **search (3)** and select the **Secure transfer to storage accounts should be enabled (4)**. You can search it using the search box.
+    ![](../Images/hyb-ex1-g1.png)
+
+1. Expand **General (1)** from the left navigation pane and select **Recommendations (2)**. In the recommendations list, search for **Secure transfer to storage accounts should be enabled (3)** and then select the recommendation **(4)** to review its details.
 
     ![](../Images/hyb-ex2-g15.png)
 
@@ -184,13 +188,13 @@ In this task, you will learn how to use Azure Policy to do some of the more comm
 
      ![Secure Transfer](../Images/hyb-ex2-g16.png)
 
-1. On the **Deny - Prevent resource creation**, select your subscription (which is currently set to audit mode). This allows you to ensure that from now on, a storage account without the security transfer feature turned on will be denied. Click on **Change to Deny**.
+1. In the **Deny - Prevent resource creation** page, select your **subscription (1)** and then click **Change to Deny (2)** to enforce the policy and prevent the creation of resources that do not meet the recommendation requirements.
 
    **Note**: If you are unable to edit the query. Click on the eclipse select **change to Audit** and retry the step
 
     ![](../Images/hyb-ex2-g17.png)
 
-1. Go back to the **recommendations view (2)** under **General (1)** left-pane, type **Auditing (3)** in the search box,. Click on the recommendation **Auditing on SQL server should be enabled (4)**.
+1. Expand **General (1)** from the left navigation pane and select **Recommendations (2)**. In the recommendations list, search for **Auditing on SQL server should be enabled (3)** and then select the recommendation **(4)** to review its details.
 
    > **Note**: If you don't see the above recommendation, that means it is not loaded yet, and it could take up to 24 hours for all the recommendations to show up. It is possible that during lab time, this may not show up – which is the case sometimes. You can note down this step number then continue to the next task and verify this later.
 
@@ -204,14 +208,17 @@ In this task, you will learn how to use Azure Policy to do some of the more comm
 
 1. Once the **Auditing on SQL server should be enabled** pane opens with all of the policy configuration options, select the following configuration settings:
 
-    * Under the **Basics** tab under the Scope header, select the ellipse icon **(...)** to select your subscription and  select the **asclab** for resource group and click on the **Select**.
-    * Then click on **Next**.
+1. In the **Assign policy** page, ensure the **Basics (1)** tab is selected and click the **ellipsis (...) (2)** button next to **Scope**.
 
-        ![](../Images/hyb-ex2-g20.png)  
+   ![](../Images/hyb-ex2-g20.png)  
 
-        ![](../Images/hyb-ex2-g21.png)     
+1. In the **Scope** pane, select the **asclab (1)** resource group and then click **Select (2)**.
 
-        ![](../Images/hyb-ex2-g22.png)
+   ![](../Images/hyb-ex2-g21.png)  
+
+1. Verify that the selected scope is displayed and the **Policy definition** is set to **Auditing on SQL server should be enabled**. Click **Next** to continue.     
+
+    ![](../Images/hyb-ex2-g22.png)
 
 1. In the **Parameters (1)** tab, leave the *Effect* and *Retention days* with default values.
 
@@ -246,7 +253,7 @@ In this task, you will be creating a custom initiative using azure policy and wi
 
 ***Create a custom initiative using Azure Policy***
 
-1. In the search box located at the top of the Azure Portal page, search for **Policy (1)** and click on it. 
+1. In the Azure portal search bar, type **Policy (1)** and select **Policy (2)** from the search results.
 
     ![](../Images/hyb-ex2-g9.png)
 
@@ -269,10 +276,10 @@ In this task, you will be creating a custom initiative using azure policy and wi
 
 1. The Add policy definition(s) pane opens: <br>
 Add each policy one by one:
-      Search and select the **below policy definitions ** and click on **Add (2)**
+      Search and select the **below policy definitions** and click on **Add (2)**
     - *Function apps should use managed identity*
     - *Public network access on Azure SQL Database should be disabled*
-    - ***Storage accounts should restrict network access* (1)**
+    - *Storage accounts should restrict network access* **(1)**
 
         ![](../Images/hyb-ex2-g28.png)
 
@@ -282,11 +289,11 @@ Add each policy one by one:
 
 ***Add a custom initiative to your subscription***
 
-1. From Azure Portal, search for **Microsoft Defender for Cloud** and select it.
+1. In the Azure portal search bar, type **Microsoft Defender for Cloud (1)** and select **Microsoft Defender for Cloud (2)** from the search results.
 
     ![](../Images/hyb-ex1-g1.png)
 
-1. From **Microsoft Defender for Cloud** blade, Select **Environment settings** and select your subscription..
+1. In the **Microsoft Defender for Cloud** page, expand **Management (1)** from the left navigation pane and select **Environment settings (2)**. On the Environment settings page, Select **subscription (3)**.
 
     ![Template deployment completed](../Images/hyb-ex1-g2.png)
    
@@ -294,7 +301,7 @@ Add each policy one by one:
 
     ![Template deployment completed](../Images/Sh32.png)
 
-1. Click on **...** for Contoso Security Benchmark and select **View in Azure Policy**. In the Contoso Security Benchmark page, select **Assign initiative**.
+1. Click on **... (1)** for Contoso Security Benchmark and select **View in Azure Policy (2)**. In the Contoso Security Benchmark page, select **Assign initiative**.
 
     ![](../Images/lab3-5.png)
 
@@ -316,12 +323,16 @@ Add each policy one by one:
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### Summary
+## Summary
 
-In this module, you have completed Exploring **Microsoft Defender for Cloud** features, **ASC default policy, Azure Policy, Created resource exemption, Created policy enforcement and deny,** and **Created custom policy**.
+In this lab, you:
 
-Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
+- Explored the **Microsoft Defender for Cloud default policies** and reviewed how security recommendations are mapped to Azure Policy initiatives and assignments.
+- Examined **Azure Policy** built-in initiatives, policy definitions, assignments, and compliance management capabilities.
+- Created a **resource exemption** for a recommendation and reviewed how exemptions impact security recommendations and Secure Score.
+- Configured **policy enforcement and deny actions** to automatically enforce security controls and remediate non-compliant resources.
+- Created and assigned a **custom initiative and policy** to implement organization-specific security requirements and governance controls.
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+## Click Next to continue to the next lab.
 
-   ![](../Images/next-xdr.png)
+   ![](../Images/SHC0.png)

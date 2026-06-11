@@ -40,29 +40,28 @@ In this task, you will be interacting with the Microsoft Defender for Cloud dash
     > Good to know: <br>
     > The higher the score, the lower the identified risk level.
 
-1. From the **Microsoft Defender for Cloud** page Select the **Workload Protections** from the **Cloud Security** section.
+1. In the **Microsoft Defender for Cloud** page, expand **Cloud Security (1)** from the left navigation pane and select **Workload protections (2)** to view and manage security protection plans, alerts, and workload-specific security settings.
 
-    ![](../Images/workload1.png)
+    ![](../Images/SHC2.png)
 
-1. On the **Workload Protections (1)**, under Cloud Security, you can see the coverage of your **connected resources (2)** for the currently selected subscription. Your current resource coverage should be **fully covered 100% (3)**, which means **full protection**. Additionally, you can also view the recent **security alerts (4)** color-coded by severity.
+1. Review the **Workload protections** dashboard and verify that all supported resources are protected. Confirm that the resources shown under **Defender for Cloud coverage (1)** are enabled and that the environment displays **Fully covered (100%) (2)**. Also review the **Security alerts (3)** section to verify that there are no active security alerts.
 
-     ![Overview: Microsoft Defender  for Cloud tile](../Images/workload%20protection1.png)
+     ![Overview: Microsoft Defender  for Cloud tile](../Images/SHC3.png)
 
    >**Note**: Resource coverage will take about 5-6 hrs to change the status to **fully covered 100%**.
 
-1. Next, select **Regulatory Compliance** from the **Cloud Security** section of the Microsoft Defender for Cloud page.
+1. Next, expand **Cloud Security (1)** from the left navigation pane and select **Regulatory compliance (2)**. On the **Regulatory compliance** page, review the **Microsoft cloud security benchmark (3)** section to assess your organization's compliance status and view the number of controls that have passed.
 
      ![](../Images/hyb-ex1-g16.png)
-
-1. On the **Regulatory Compliance (1)** tile, you can get insights into your compliance posture based on a continuous assessment of both Azure and hybrid cloud environments. This tile shows the following standards, which are **Microsoft cloud security benchmark (2)**.
  
-1. Next Click on **Inventory** from the **General** section of the Microsoft Defender for Cloud. It shows the number of unmonitored VMs alongside the total covered resources; **you should expect to have zero unmonitored VMs**. Resources are classified according to their health status.
+1. Next expand **General (1)** from the left navigation pane and select **Inventory (2)**. Review the inventory dashboard, which provides a consolidated view of resources across your environment, including resource health, resource types, and environment distribution.
 
-     > Important: <br>
+    ![Overview: Inventory tile](../Images/hyb-ex1-g17.png)
+
+     > **Important:**
      > Unmonitored VMs are considered virtual machines that have a Log Analytics agent deployed, but the agent isn't sending data or has other health issues.
      > 
      > **Note:** If in case there are any resources under Unmonitored resources, then please proceed further with Exercise 2 and come back later to check on the same. 
-    ![Overview: Inventory tile](../Images/hyb-ex1-g17.png)
 
 ### Task 2: Exploring Secure Score and Recommendations
 
@@ -73,7 +72,7 @@ Previously, we explored the Secure Score tile on the overview page.
 In this task you will dive into this capability and the associated recommendations. Microsoft Defender for Cloud mimics the work of a security analyst, reviewing the security recommendations and applying advanced algorithms to determine how crucial each recommendation is. Microsoft Defender for Cloud constantly reviews the active recommendations and calculates the score based on them. All findings are aggregated into a single score (Secure Score), which measures the current security posture of your subscription(s); the higher the score, the lower the identified risk level.
 Exploring secure score
 
-1. Type **Microsoft Defender for Cloud** in the search box located on the top of the **Azure Portal** page and click to open it.
+1. In the Azure portal search bar, type **Microsoft Defender for Cloud (1)** and select **Microsoft Defender for Cloud (2)** from the search results.
 
     ![](../Images/hyb-ex1-g1.png)
 
@@ -95,7 +94,7 @@ Exploring secure score
 
 1. On the **Recommendations (1)** page, use the **Switch to classic view** button at the top menu and pay attention to the first part of the page, the **summary view (2)**. It includes the progress on the **Recommendations status** (both completed security controls and recommendations), and **Resource health** (by severity).
 
-    ![Recommendations view](../Images/mod2-ex2-1.png)
+    ![Recommendations view](../Images/SHC4.png)
 
     > **Note:** Your data might look different from what’s shown in the screenshots, and that’s totally expected based on your environment and available resources..
 
@@ -191,9 +190,9 @@ In this task, you will be exploring the Inventory capabality in the Microsoft de
   * Assign `Environment` as the name and  `Production` as the value.
   * Click **Save**.
 
-   > **Note**: If you don't see App Services in the Resource type filter, that means it is not loaded yet to recommendations. Note down this step number and verify this later.
+     > **Note**: If you don't see App Services in the Resource type filter, that means it is not loaded yet to recommendations. Note down this step number and verify this later.
 
-   ![Inventory: Assign tags](../Images/c6.gif?raw=true)
+     ![Inventory: Assign tags](../Images/c6.gif?raw=true)
    
 1. From the filter pane, remove the **Resource type** filter then go to **Add filter** and notice the **Security findings** filter – it allows you to find all resources that are prone to a specific vulnerability. You can also search for CVE, KB ID, name and missing update.
 
@@ -213,12 +212,16 @@ In this task, you will be exploring the Inventory capabality in the Microsoft de
 > The Inventory dashboard is fully built on top of the Azure Resource Graph (ARG) which stores all of Microsoft Defender's cloud security posture data and leverages its powerful KQL engine.
 > It enables you to reach deep insights quickly and easily on top of Microsoft Defender for cloud data and cross-reference with any other resource properties.
 
-### Summary
+## Summary
 
-In this module, you have explored **Microsoft Defender for Cloud dashboard**, **Secure Score and Recommendations** and **Inventory capability**. 
-  
-Now you can move on to the next module by clicking on the Next button at the bottom right of this screen.
+In this lab, you:
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+- Explored the **Microsoft Defender for Cloud** dashboard and reviewed key security posture, workload protection, and compliance insights.
+- Analyzed the **Secure Score** and learned how Microsoft Defender for Cloud prioritizes and tracks security recommendations.
+- Investigated and remediated security recommendations to improve the security posture of Azure resources.
+- Explored the **Inventory** dashboard to review resource health, recommendations, and protection status across the environment.
+- Used filtering, tagging, and Azure Resource Graph capabilities to organize, manage, and analyze cloud resources.
 
-   ![](../Images/next-xdr.png)
+## Click Next to continue to the next lab.
+
+   ![](../Images/SHC0.png)
