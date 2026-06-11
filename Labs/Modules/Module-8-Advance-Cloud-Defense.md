@@ -38,7 +38,7 @@ In this task, you will be using Just In Time access (JIT) to access your virtual
 
     ![](../Images/hyb-ex6-g27.png)
 
-1. Select **Configuration (2)** from the left-hand side menu in **Settings (1)** and click on **Enable Just-in-time (3)**
+1. Expand **Settings (1)** and select **Configuration (2)**. On the **Configuration** page, click **Enable just-in-time (3)** to enable Just-in-Time VM access for the virtual machine.
        
     ![](../Images/hyb-ex6-g28.png)
        
@@ -48,10 +48,11 @@ In this task, you will be using Just In Time access (JIT) to access your virtual
 
         ![](../Images/justintime1.png)
     
-1. Select **asclab-win** and then click on the **Enable JIT on 1 VM** button.
+1. On the **Just-in-time VM access** page, ensure the **Not Configured (1)** tab is selected, choose the **asclab-win (2)** virtual machine, and then click **Enable JIT on 1 VM (3)**.
+
     > If you have followed the above instructions to enable **Just-in-time VM access**, you can skip Steps 8-11 and continue from Step 12.
     
-    ![Enable JIT on Windows VM](../Images/lab8-2.png)
+    ![Enable JIT on Windows VM](../Images/SHC5.png)
 
 1. On the **JIT VM access configuration** page, keep just the **3389 (RDP) port** and remove all the other ports listed. To remove, click on the ellipses icon (...) for each port and then click on **Delete**.
 
@@ -97,7 +98,7 @@ In this task, you will be using Just In Time access (JIT) to access your virtual
 
     ![request-access](../Images/hyb-ex6-g36-1.png)
 
-    From **Request access (1)** under **asclab-win (2)** the **Toggle should be On (2)** and Allowed source IP should be **My IP (3)**
+    From **Request access (1)** under **asclab-win (2)** the **Toggle should be On (3)** and Allowed source IP should be **My IP (4)**
 
     ![request-access](../Images/hyb-ex6-g36-2.png)
 
@@ -119,9 +120,9 @@ In this task, you will be using Just In Time access (JIT) to access your virtual
 
     ![](../Images/hyb-ex6-g39.png)
 
-1. Now you should get the prompt for the local admin credentials. Login using the below credentials.
+1. Now you should get the prompt for the local admin credentials. Login using the below credentials.And click **OK (3)**
  
-      - **VM Username**: .\demouser
+      - **VM Username**: .\demouser 
       - **VM Password**: <inject key="VM Password"></inject>
 
           ![](../Images/hyb-ex6-g40.png)
@@ -158,7 +159,7 @@ It maps the current state of these items with the state during the previous scan
 
 1. On the **FIM configuration** page, select the **Workspace selection** named **asclab-la-<inject key="DeploymentID" enableCopy="false"/> (1)**, then you can review the default **Recommended to monitor - Enabled (2)** click **Apply (3)** to enable File Integrity Monitoring.
 
-    ![](../Images/hyb-ex6-g47.png)
+    ![](../Images/SHC6.png)
 
 1. On the Enable File Integrity Monitoring window, review the default **recommended settings** for Windows files, Registry, and Linux files.
 

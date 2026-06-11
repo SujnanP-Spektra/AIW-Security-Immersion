@@ -37,17 +37,11 @@ In this task, you will be getting started with the functionality of Microsoft De
 
 1. On the **Settings & monitoring** tab, review the status of **Log Analytics agent**
 
-    ![](../Images/hyb-ex1-g4.png)
+    ![](../Images/SHC1.png)
 
-1. In the **Microsoft Defender for Cloud** page, do the following:
+1. In the **Microsoft Defender for Cloud** page, expand **Management (1)** from the left navigation pane and select **Environment settings (2)**. On the Environment settings page, expand **Azure (3)** to view the available subscriptions, then expand your assigned **subscription (4)**. Finally, select the **asclab-la-xxxxx** Log Analytics workspace **(5)** to open its settings and continue with the configuration.
 
-   - Expand **Management (1)**.
-   - Select **Environment settings (2)**.
-   - Expand **Tenant Root Group (3)**.
-   - Expand your **subscription (4)**.
-   - Select the workspace **(5)**.
-
-        ![](../Images/gs-hyb-g2.png)
+    ![](../Images/gs-hyb-g2.png)
 
 1. On the **Defender plans** page, select **Defender plans (1)**, click **Enable all plans (2)**, and then click **Save (3)**.
 
