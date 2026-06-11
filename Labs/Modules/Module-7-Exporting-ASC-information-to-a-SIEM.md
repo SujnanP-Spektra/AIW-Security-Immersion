@@ -147,12 +147,16 @@ In this task, you will be integrating the workspace which is previously created 
 - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
 - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
     
-### Summary
+## Summary
 
-In this lab you have completed configuring continuous export for the Log Analytics workspace, exporting security alerts, recommendations, secure score, and security findings, and enabling the integration between Microsoft Defender for Cloud and Microsoft Sentinel.
+In this lab, you:
 
-Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
+- Configured **Continuous Export** to stream Microsoft Defender for Cloud security data, including recommendations, alerts, and Secure Score information.
+- Validated exported security data in a **Log Analytics workspace** using built-in tables and queries.
+- Integrated **Microsoft Defender for Cloud** with **Microsoft Sentinel** to enable centralized security monitoring and investigation.
+- Configured the **Subscription-based Microsoft Defender for Cloud (Legacy)** data connector in Microsoft Sentinel.
+- Learned how to use Microsoft Sentinel and Log Analytics to collect, analyze, and monitor Defender for Cloud security insights.
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+## Click Next to continue to the next lab.
 
-   ![](../Images/next-xdr.png)
+   ![](../Images/SHC0.png)

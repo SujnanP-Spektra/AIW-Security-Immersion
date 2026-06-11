@@ -71,10 +71,20 @@ In this task, you will create the Microsoft Defender for Cloud default policy in
     ![Template deployment completed](../Images/Sh14.png)
    
    > **Note**: Verify that the Toggle button status for the Microsoft cloud security benchmark is set to **On**. If the status option isn't visible, try zooming out in your browser.
+   
 ## Summary
 
-In this module, you have learned how to enable Microsoft Defender for Cloud. Now you can move on to the next module by clicking on the Next button at the bottom right of this page.
+In this lab, you:
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+- Enabled **Microsoft Defender for Cloud** for your Azure subscription.
+- Configured and reviewed **Environment Settings** for Defender for Cloud.
+- Verified the status of the **Log Analytics Agent** and monitoring configuration.
+- Enabled all available **Microsoft Defender Plans** for enhanced protection and threat detection.
+- Explored the relationship between Defender for Cloud and **Log Analytics Workspaces**.
+- Reviewed the automatically created **Microsoft cloud security benchmark** policy.
+- Verified that the default security policy was enabled and applied to the subscription.
+- Learned how Microsoft Defender for Cloud provides security posture management, continuous assessment, and protection across Azure resources.
 
-   ![](../Images/next-xdr.png)
+## Click Next to continue to the next lab.
+
+   ![](../Images/SHC0.png)

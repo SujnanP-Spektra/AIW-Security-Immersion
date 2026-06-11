@@ -316,10 +316,14 @@ In this task, you will query and calculate your score for the security controls 
 
 ## Summary
 
-In this module, you have completed exploring more **Microsoft Defender for Cloud** features - **Vulnerability assessment for Containers**, **Automated recommendations with workflow automation** and **Accessed your secure score via ARG**.
+In this lab, you:
 
-Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
+- Performed a **vulnerability assessment for containers** by uploading a container image to Azure Container Registry and reviewing identified vulnerabilities and security findings.
+- Created a **Logic App** and configured **Workflow Automation** to automatically respond to Microsoft Defender for Cloud recommendations.
+- Configured automated email notifications to streamline security monitoring and recommendation management.
+- Triggered and validated workflow automation to verify automated response actions and notifications.
+- Used **Azure Resource Graph (ARG)** queries to retrieve and analyze Secure Score data and security control information across Azure resources.
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+## Click Next to continue to the next lab.
 
-   ![](../Images/next-xdr.png)
+   ![](../Images/SHC0.png)

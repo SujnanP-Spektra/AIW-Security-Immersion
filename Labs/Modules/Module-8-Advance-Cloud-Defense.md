@@ -169,6 +169,12 @@ It maps the current state of these items with the state during the previous scan
     
 ## Summary
 
-In this module, you have completed exploring different **Microsoft Defender for Cloud** features - **Used JIT to reduce the attack surface**, **Adaptive Application Control** and **File Integrity Monitoring**. You have reached the end of the lab.
+In this lab, you:
+
+- Configured and used **Just-in-Time (JIT) VM Access** to reduce the attack surface and securely access Azure virtual machines.
+- Requested and validated temporary access to a protected virtual machine using Microsoft Defender for Cloud workload protections.
+- Explored **File Integrity Monitoring (FIM)** to track changes to critical files, registry settings, and operating system configurations.
+- Configured and enabled File Integrity Monitoring for a Log Analytics workspace and reviewed the recommended monitoring settings.
+- Learned how Microsoft Defender for Cloud helps strengthen cloud security by reducing exposure to threats and monitoring critical system changes.
 
 ### Lab Successfully Completed

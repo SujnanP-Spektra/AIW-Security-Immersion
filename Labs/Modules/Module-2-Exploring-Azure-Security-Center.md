@@ -212,12 +212,16 @@ In this task, you will be exploring the Inventory capabality in the Microsoft de
 > The Inventory dashboard is fully built on top of the Azure Resource Graph (ARG) which stores all of Microsoft Defender's cloud security posture data and leverages its powerful KQL engine.
 > It enables you to reach deep insights quickly and easily on top of Microsoft Defender for cloud data and cross-reference with any other resource properties.
 
-### Summary
+## Summary
 
-In this module, you have explored **Microsoft Defender for Cloud dashboard**, **Secure Score and Recommendations** and **Inventory capability**. 
-  
-Now you can move on to the next module by clicking on the Next button at the bottom right of this screen.
+In this lab, you:
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+- Explored the **Microsoft Defender for Cloud** dashboard and reviewed key security posture, workload protection, and compliance insights.
+- Analyzed the **Secure Score** and learned how Microsoft Defender for Cloud prioritizes and tracks security recommendations.
+- Investigated and remediated security recommendations to improve the security posture of Azure resources.
+- Explored the **Inventory** dashboard to review resource health, recommendations, and protection status across the environment.
+- Used filtering, tagging, and Azure Resource Graph capabilities to organize, manage, and analyze cloud resources.
 
-   ![](../Images/next-xdr.png)
+## Click Next to continue to the next lab.
+
+   ![](../Images/SHC0.png)

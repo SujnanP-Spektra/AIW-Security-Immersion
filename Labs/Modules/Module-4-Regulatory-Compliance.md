@@ -183,10 +183,14 @@ In this task, you will be creating your own bechmark and will be assigning it.
 
 ## Summary
 
-In this module, you have completed Exploring **Microsoft Defender for cloud** features - **Regulatory Compliance dashboard**, **Added new standards** and **Created your own benchmark**.
+In this lab, you:
 
-Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
+- Explored the **Regulatory Compliance** dashboard and reviewed compliance assessments, controls, and standards within Microsoft Defender for Cloud.
+- Analyzed compliance details for security controls and generated compliance reports to evaluate your organization's regulatory posture.
+- Added and enabled a new compliance standard, **CIS Microsoft Azure Foundations Benchmark**, for your subscription.
+- Created a custom benchmark initiative by defining groups and associating policy definitions to meet organization-specific compliance requirements.
+- Assigned the custom benchmark as a security policy and integrated it with Microsoft Defender for Cloud for compliance tracking and governance.
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+## Click Next to continue to the next lab.
 
-   ![](../Images/next-xdr.png)
+   ![](../Images/SHC0.png)

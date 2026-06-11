@@ -323,12 +323,16 @@ Add each policy one by one:
    - If not, carefully read the error message and retry the step, following the instructions in the lab guide.
    - If you need any assistance, please contact us at labs-support@spektrasystems.com. We are available 24/7 to help you out.
 
-### Summary
+## Summary
 
-In this module, you have completed Exploring **Microsoft Defender for Cloud** features, **ASC default policy, Azure Policy, Created resource exemption, Created policy enforcement and deny,** and **Created custom policy**.
+In this lab, you:
 
-Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
+- Explored the **Microsoft Defender for Cloud default policies** and reviewed how security recommendations are mapped to Azure Policy initiatives and assignments.
+- Examined **Azure Policy** built-in initiatives, policy definitions, assignments, and compliance management capabilities.
+- Created a **resource exemption** for a recommendation and reviewed how exemptions impact security recommendations and Secure Score.
+- Configured **policy enforcement and deny actions** to automatically enforce security controls and remediate non-compliant resources.
+- Created and assigned a **custom initiative and policy** to implement organization-specific security requirements and governance controls.
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+## Click Next to continue to the next lab.
 
-   ![](../Images/next-xdr.png)
+   ![](../Images/SHC0.png)

@@ -198,10 +198,14 @@ In this task, we will use one of the endpoints that allows retrieving a list of 
     
 ## Summary
 
-In this module, you have completed exploring more **Security Center** features - **Alert validation**, **Alert suppression** and **Accessed Security Alerts using Graph Security API**.
+In this lab, you:
 
-Now you can move on to the next module by clicking on the Next button at the bottom right of the screen.
+- Generated and analyzed **sample security alerts** in Microsoft Defender for Cloud to understand alert investigation and validation workflows.
+- Reviewed alert details, examined affected resources, and updated alert status to manage security incidents.
+- Created and managed **alert suppression rules** to automatically dismiss recurring or non-actionable alerts.
+- Explored **Microsoft Graph Security API** and retrieved security alert data using Graph API queries.
+- Learned how Microsoft Defender for Cloud helps monitor, investigate, and automate responses to security events across Azure resources.
 
-Now, click on **Next** from the lower right corner to move on to the next page.
+## Click Next to continue to the next lab.
 
-   ![](../Images/next-xdr.png)
+   ![](../Images/SHC0.png)
