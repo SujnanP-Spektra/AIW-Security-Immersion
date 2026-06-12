@@ -17,7 +17,7 @@ In this task, you will be getting started with the functionality of Microsoft De
 
 ### Subscription upgrade and agent installation
 
-1. Type **Microsoft Defender for Cloud** in the search box on top of the **Azure Portal** and click to open it.
+1. In the Azure portal search bar, type **Microsoft Defender for Cloud (1)** and select **Microsoft Defender for Cloud (2)** from the search results.
 
     ![](../Images/hyb-ex1-g1.png)
 
